@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>16b79a8c36cf453e991214cb3e3f47c9</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<section id="1" class="cell markdown" id="URdn7mCvv5ut">
+<h1>1</h1>
+</section>
+<div class="cell code" id="0lM_v472wDrS">
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib . pyplot <span class="im">as</span> plt</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn . datasets <span class="im">import</span> load_digits</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn <span class="im">import</span> model_selection</span></code></pre></div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="a3HoMy-3v9LX" data-outputId="b2417e87-e107-45d2-e0da-33e86f4e0ddc">
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>digits <span class="op">=</span> load_digits()</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span> ( digits.keys() )</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> digits [ <span class="st">&quot;data&quot;</span> ]</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>images <span class="op">=</span> digits [ <span class="st">&quot;images&quot;</span> ]</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>target <span class="op">=</span> digits [ <span class="st">&quot;target&quot;</span> ]</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>target_names <span class="op">=</span> digits [ <span class="st">&quot;target_names&quot;</span> ]</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>dict_keys([&#39;data&#39;, &#39;target&#39;, &#39;frame&#39;, &#39;feature_names&#39;, &#39;target_names&#39;, &#39;images&#39;, &#39;DESCR&#39;])
+</code></pre>
+</div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:905}"
+id="hptUPXIQwOFa" data-outputId="326263cd-56ab-4a8b-d0de-745c4ccc1969">
+<div class="sourceCode" id="cb4"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>img_size <span class="op">=</span> images[<span class="dv">0</span>].shape</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(img_size)</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>index_3 <span class="op">=</span> np.where(target <span class="op">==</span> <span class="dv">3</span>)[<span class="dv">0</span>]</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>img <span class="op">=</span> np.reshape(data[index_3][<span class="dv">0</span>], (<span class="dv">8</span>, <span class="dv">8</span>))</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="cf">assert</span> <span class="dv">2</span> <span class="op">==</span> <span class="bu">len</span>(img.shape)</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>plt.figure()</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>plt.gray()</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&#39;Interpolation: nearest&#39;</span>)</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>plt.imshow( img , interpolation <span class="op">=</span> <span class="st">&quot;nearest&quot;</span> ) <span class="co"># also try interpolation =&quot; bicubic &quot;</span></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>plt.figure()</span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>plt.gray()</span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&#39;Interpolation: bicubic&#39;</span>)</span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>plt.imshow( img , interpolation <span class="op">=</span> <span class="st">&quot;bicubic&quot;</span> ) <span class="co"># also try interpolation =&quot; bicubic &quot;</span></span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>(8, 8)
+</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_8ea0fb87e6f84e7c9ff0dd554bfca62a/a0be3a7b911e79471fc82c714be2d0192ee09ae9.png" /></p>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_8ea0fb87e6f84e7c9ff0dd554bfca62a/7fe1168e39bc89504624cfb80fbfed55328c3bee.png" /></p>
+</div>
+</div>
+<div class="cell code" id="zWsLqzI6zRvp">
+<div class="sourceCode" id="cb6"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Get indices of pcitures of a 9</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>index_9 <span class="op">=</span> np.where(target <span class="op">==</span> <span class="dv">9</span>)[<span class="dv">0</span>]</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Concatenate both arrays of indices and mix them</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>both_indices <span class="op">=</span> np.concatenate((index_9, index_3))</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>both_indices <span class="op">=</span> np.sort(both_indices)</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Only select data with indices of 3s and 9s</span></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>data_3_9 <span class="op">=</span> data[both_indices]</span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>images <span class="op">=</span> images[both_indices]</span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>target <span class="op">=</span> target[both_indices]</span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>X_all <span class="op">=</span> data_3_9</span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>y_all <span class="op">=</span> target</span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>X_train , X_test , y_train , y_test <span class="op">=\</span></span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a>  model_selection.train_test_split( X_all, y_all ,</span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a>  test_size <span class="op">=</span> <span class="fl">0.4</span> , random_state <span class="op">=</span> <span class="dv">0</span>)</span></code></pre></div>
+</div>
+<section id="21" class="cell markdown" id="y8JTyDD62pWA">
+<h1>2.1</h1>
+</section>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:286}"
+id="wHjgn1Hs2q_o" data-outputId="4d7f89e6-c793-46ae-e54e-29ab0fec9173">
+<div class="sourceCode" id="cb7"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Visualize the mean images for 3s and 9s</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>data_3, data_9 <span class="op">=</span> data[index_3], data[index_9]</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>mean_img_3, mean_img_9 <span class="op">=</span> np.reshape(np.mean(data_3, axis<span class="op">=</span><span class="dv">0</span>), (<span class="dv">8</span>,<span class="dv">8</span>)) , np.reshape(np.mean(data_9, axis<span class="op">=</span><span class="dv">0</span>), (<span class="dv">8</span>,<span class="dv">8</span>))</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>fig, axes <span class="op">=</span> plt.subplots(<span class="dv">1</span>, <span class="dv">2</span>)</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">0</span>].imshow(mean_img_3, interpolation <span class="op">=</span> <span class="st">&quot;nearest&quot;</span>, cmap<span class="op">=</span><span class="st">&#39;gray&#39;</span>)</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">1</span>].imshow(mean_img_9, interpolation <span class="op">=</span> <span class="st">&quot;nearest&quot;</span>, cmap<span class="op">=</span><span class="st">&#39;gray&#39;</span>)</span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a></span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_8ea0fb87e6f84e7c9ff0dd554bfca62a/1d21e9d559399108c71dbbe803f9da56a63d65c8.png" /></p>
+</div>
+</div>
+<div class="cell markdown" id="FIOT57Ew43k1">
+<p>To classify a 9, we use the pixels (3, 2), (2, 2) and (3, 5). For a
+3, we use (0, 3), (0, 4) and (3, 4). Although, we have to admit that
+thsoe pixels are also represented in many 9s...</p>
+</div>
+<div class="cell code" id="hHxJGwUK424D">
+<div class="sourceCode" id="cb8"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> features2d(x):</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  f_3_2, f_3_5, f_0_3, f_0_4, f_3_4, f_2_2 <span class="op">=</span> x[<span class="dv">3</span>, <span class="dv">2</span>], x[<span class="dv">3</span>, <span class="dv">5</span>], x[<span class="dv">0</span>, <span class="dv">3</span>], x[<span class="dv">0</span>, <span class="dv">4</span>], x[<span class="dv">3</span>, <span class="dv">4</span>], x[<span class="dv">2</span>, <span class="dv">2</span>]</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  feature_9 <span class="op">=</span> (f_3_2 <span class="op">+</span> f_3_5 <span class="op">+</span> f_2_2) <span class="op">/</span> <span class="dv">3</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>  feature_3 <span class="op">=</span> (f_0_3 <span class="op">+</span> f_0_4 <span class="op">+</span> f_3_4) <span class="op">/</span> <span class="dv">3</span></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> [feature_9, feature_3]</span></code></pre></div>
+</div>
+<section id="22" class="cell markdown" id="Jd36U3Bg7Ovj">
+<h1>2.2</h1>
+</section>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:452}"
+id="RwCsjH517Dhy" data-outputId="29199841-6faf-41c6-96c6-a62a24755873">
+<div class="sourceCode" id="cb9"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>features_3 <span class="op">=</span> []</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> img <span class="kw">in</span> data_3:</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  img <span class="op">=</span> np.reshape(img, (<span class="dv">8</span>,<span class="dv">8</span>))</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>  current_feature <span class="op">=</span> features2d(img)</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>  features_3.append(current_feature)</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>features_3 <span class="op">=</span> np.array(features_3)</span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>features_9 <span class="op">=</span> []</span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> img <span class="kw">in</span> data_9:</span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>  img <span class="op">=</span> np.reshape(img, (<span class="dv">8</span>,<span class="dv">8</span>))</span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>  current_feature <span class="op">=</span> features2d(img)</span>
+<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a>  features_9.append(current_feature)</span>
+<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a>features_9 <span class="op">=</span> np.array(features_9)</span>
+<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a>plt.scatter(features_3[:, <span class="dv">0</span>], features_3[:, <span class="dv">1</span>], c<span class="op">=</span><span class="st">&#39;r&#39;</span>, label<span class="op">=</span><span class="st">&#39;Class 3&#39;</span>)</span>
+<span id="cb9-18"><a href="#cb9-18" aria-hidden="true" tabindex="-1"></a>plt.scatter(features_9[:, <span class="dv">0</span>], features_9[:, <span class="dv">1</span>], c<span class="op">=</span><span class="st">&#39;b&#39;</span>, label<span class="op">=</span><span class="st">&#39;Class 9&#39;</span>)</span>
+<span id="cb9-19"><a href="#cb9-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-20"><a href="#cb9-20" aria-hidden="true" tabindex="-1"></a>plt.legend()</span>
+<span id="cb9-21"><a href="#cb9-21" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&#39;Feature space of 3 and 9 images&#39;</span>)</span>
+<span id="cb9-22"><a href="#cb9-22" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_8ea0fb87e6f84e7c9ff0dd554bfca62a/157127c9bb8feac563e16c16ad1bcc87ba5d820a.png" /></p>
+</div>
+</div>
+<div class="cell markdown" id="LvAXLxghFswp">
+<p>We have some outliers and the seperation of the two classes is not
+clear. However, this is good enough for now. We can see the seperation
+of the two classes in the feature space.</p>
+</div>
+<section id="23" class="cell markdown" id="fPaembgxB3NQ">
+<h1>2.3</h1>
+</section>
+<div class="cell code" id="cN_E1iCRB4j1">
+<div class="sourceCode" id="cb10"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> nearest_mean(training_features, training_labels, test_features):</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Seperate training data into arrays of 3 and 9</span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>  indices_3 <span class="op">=</span> np.where(training_labels <span class="op">==</span> <span class="dv">3</span>)[<span class="dv">0</span>]</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>  indices_9 <span class="op">=</span> np.where(training_labels <span class="op">==</span> <span class="dv">9</span>)[<span class="dv">0</span>]</span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>  training_features_3 <span class="op">=</span> training_features[indices_3]</span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>  training_features_9 <span class="op">=</span> training_features[indices_9]</span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Find the mean of each feature</span></span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>  mean_3 <span class="op">=</span> np.mean(training_features_3, axis<span class="op">=</span><span class="dv">0</span>)</span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>  mean_9 <span class="op">=</span> np.mean(training_features_9, axis<span class="op">=</span><span class="dv">0</span>)</span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Calculate the distance of the test_features to both means and calssify the label</span></span>
+<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a>  labels <span class="op">=</span> []</span>
+<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-16"><a href="#cb10-16" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> test_feature <span class="kw">in</span> test_features:</span>
+<span id="cb10-17"><a href="#cb10-17" aria-hidden="true" tabindex="-1"></a>    distance_mean_3 <span class="op">=</span> np.linalg.norm(mean_3 <span class="op">-</span> test_feature)</span>
+<span id="cb10-18"><a href="#cb10-18" aria-hidden="true" tabindex="-1"></a>    distance_mean_9 <span class="op">=</span> np.linalg.norm(mean_9 <span class="op">-</span> test_feature)</span>
+<span id="cb10-19"><a href="#cb10-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-20"><a href="#cb10-20" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> distance_mean_3 <span class="op">&lt;=</span> distance_mean_9:</span>
+<span id="cb10-21"><a href="#cb10-21" aria-hidden="true" tabindex="-1"></a>      label <span class="op">=</span> <span class="dv">3</span></span>
+<span id="cb10-22"><a href="#cb10-22" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
+<span id="cb10-23"><a href="#cb10-23" aria-hidden="true" tabindex="-1"></a>      label <span class="op">=</span> <span class="dv">9</span></span>
+<span id="cb10-24"><a href="#cb10-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-25"><a href="#cb10-25" aria-hidden="true" tabindex="-1"></a>    labels.append(label)</span>
+<span id="cb10-26"><a href="#cb10-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-27"><a href="#cb10-27" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> labels</span></code></pre></div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="L_mqc3QFFwjl" data-outputId="b985fa2e-5748-4b80-cb45-17253ab0a57a">
+<div class="sourceCode" id="cb11"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> format_and_get_feature(data):</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  <span class="co">&#39;formats the 1d array to a 2d matrix and gets the features of the image&#39;</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>  data_features <span class="op">=</span> []</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> img <span class="kw">in</span> data:</span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>    img <span class="op">=</span> np.reshape(img, (<span class="dv">8</span>,<span class="dv">8</span>))</span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>    current_feature <span class="op">=</span> features2d(img)</span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>    data_features.append(current_feature)</span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> np.array(data_features)</span>
+<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a>test_features <span class="op">=</span> format_and_get_feature(X_test)</span>
+<span id="cb11-14"><a href="#cb11-14" aria-hidden="true" tabindex="-1"></a>training_features <span class="op">=</span> format_and_get_feature(X_train)</span>
+<span id="cb11-15"><a href="#cb11-15" aria-hidden="true" tabindex="-1"></a>training_labels <span class="op">=</span> y_train</span>
+<span id="cb11-16"><a href="#cb11-16" aria-hidden="true" tabindex="-1"></a>test_labels <span class="op">=</span> y_test</span>
+<span id="cb11-17"><a href="#cb11-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-18"><a href="#cb11-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-19"><a href="#cb11-19" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> evaluate(training_features, training_labels, test_features, test_labels):</span>
+<span id="cb11-20"><a href="#cb11-20" aria-hidden="true" tabindex="-1"></a>  predicted_labels <span class="op">=</span> nearest_mean(training_features, training_labels, test_features)</span>
+<span id="cb11-21"><a href="#cb11-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-22"><a href="#cb11-22" aria-hidden="true" tabindex="-1"></a>  error <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb11-23"><a href="#cb11-23" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> index, element <span class="kw">in</span> <span class="bu">enumerate</span>(predicted_labels):</span>
+<span id="cb11-24"><a href="#cb11-24" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> element <span class="op">!=</span> test_labels[index]:</span>
+<span id="cb11-25"><a href="#cb11-25" aria-hidden="true" tabindex="-1"></a>      error <span class="op">+=</span> <span class="dv">1</span> <span class="co"># error contains Fp and FN</span></span>
+<span id="cb11-26"><a href="#cb11-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-27"><a href="#cb11-27" aria-hidden="true" tabindex="-1"></a>  total_error <span class="op">=</span> error <span class="op">/</span> <span class="bu">len</span>(test_labels)</span>
+<span id="cb11-28"><a href="#cb11-28" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> <span class="bu">round</span>(total_error, <span class="dv">4</span>)</span>
+<span id="cb11-29"><a href="#cb11-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-30"><a href="#cb11-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-31"><a href="#cb11-31" aria-hidden="true" tabindex="-1"></a><span class="co"># Get training error</span></span>
+<span id="cb11-32"><a href="#cb11-32" aria-hidden="true" tabindex="-1"></a>error <span class="op">=</span> evaluate(training_features, training_labels, training_features, training_labels)</span>
+<span id="cb11-33"><a href="#cb11-33" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;training error:&#39;</span>, error)</span>
+<span id="cb11-34"><a href="#cb11-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-35"><a href="#cb11-35" aria-hidden="true" tabindex="-1"></a><span class="co"># Get test error</span></span>
+<span id="cb11-36"><a href="#cb11-36" aria-hidden="true" tabindex="-1"></a>error <span class="op">=</span> evaluate(training_features, training_labels, test_features, test_labels)</span>
+<span id="cb11-37"><a href="#cb11-37" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;test error:&#39;</span>, error)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>training error: 0.0553
+test error: 0.0479
+</code></pre>
+</div>
+</div>
+<div class="cell markdown" id="fRNedByOPa_4">
+<p>Overall, the error is quit low which indicates that the classifier is
+good. Intersentingly, the error for the training data is higher than the
+error for the test data. This might be because the size of the training
+data is bigger than the size of the test data. Thus, it is more probable
+that the training data contains more outliers than the test data.</p>
+</div>
+<section id="24" class="cell markdown" id="oxMfln1BP1UH">
+<h1>2.4</h1>
+</section>
+<div class="cell markdown" id="kOgqN4qGSAbH">
+<p>We adjust our function nearest_mean a little bit:</p>
+</div>
+<div class="cell code" id="EbleXgkNSEWN">
+<div class="sourceCode" id="cb13"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> nearest_mean_adjsuted(training_features, training_labels, feature):</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Seperate training data into arrays of 3 and 9</span></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>  indices_3 <span class="op">=</span> np.where(training_labels <span class="op">==</span> <span class="dv">3</span>)[<span class="dv">0</span>]</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>  indices_9 <span class="op">=</span> np.where(training_labels <span class="op">==</span> <span class="dv">9</span>)[<span class="dv">0</span>]</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>  training_features_3 <span class="op">=</span> training_features[indices_3]</span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>  training_features_9 <span class="op">=</span> training_features[indices_9]</span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Find the mean of each feature</span></span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a>  mean_3 <span class="op">=</span> np.mean(training_features_3, axis<span class="op">=</span><span class="dv">0</span>)</span>
+<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a>  mean_9 <span class="op">=</span> np.mean(training_features_9, axis<span class="op">=</span><span class="dv">0</span>)</span>
+<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a>  distance_mean_3 <span class="op">=</span> np.linalg.norm(mean_3 <span class="op">-</span> feature)</span>
+<span id="cb13-14"><a href="#cb13-14" aria-hidden="true" tabindex="-1"></a>  distance_mean_9 <span class="op">=</span> np.linalg.norm(mean_9 <span class="op">-</span> feature)</span>
+<span id="cb13-15"><a href="#cb13-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-16"><a href="#cb13-16" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> distance_mean_3 <span class="op">&lt;=</span> distance_mean_9:</span>
+<span id="cb13-17"><a href="#cb13-17" aria-hidden="true" tabindex="-1"></a>    label <span class="op">=</span> <span class="dv">1</span></span>
+<span id="cb13-18"><a href="#cb13-18" aria-hidden="true" tabindex="-1"></a>  <span class="cf">else</span>:</span>
+<span id="cb13-19"><a href="#cb13-19" aria-hidden="true" tabindex="-1"></a>    label <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb13-20"><a href="#cb13-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-21"><a href="#cb13-21" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> label, mean_3, mean_9</span></code></pre></div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:452}"
+id="tWcqkmqEP2dY" data-outputId="9890739f-1d84-478e-9f53-05c364181fef">
+<div class="sourceCode" id="cb14"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> matplotlib.colors <span class="im">import</span> ListedColormap</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>matrix <span class="op">=</span> np.zeros((<span class="dv">200</span>, <span class="dv">200</span>))</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>f_1_values <span class="op">=</span> np.linspace(<span class="dv">0</span>, <span class="dv">18</span>, <span class="dv">200</span>)</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>f_2_values <span class="op">=</span> np.linspace(<span class="dv">0</span>, <span class="dv">18</span>, <span class="dv">200</span>)</span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> row_index <span class="kw">in</span> np.arange(<span class="dv">0</span>, <span class="dv">200</span>):</span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> column_index <span class="kw">in</span> np.arange(<span class="dv">0</span>, <span class="dv">200</span>):</span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a>    f_1 <span class="op">=</span> f_1_values[row_index]</span>
+<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a>    f_2 <span class="op">=</span> f_2_values[column_index]</span>
+<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a>    label, mean_3, mean_9 <span class="op">=</span> nearest_mean_adjsuted(training_features, training_labels, np.array([f_1, f_2]))</span>
+<span id="cb14-13"><a href="#cb14-13" aria-hidden="true" tabindex="-1"></a>    matrix[row_index, column_index] <span class="op">=</span> label</span>
+<span id="cb14-14"><a href="#cb14-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-15"><a href="#cb14-15" aria-hidden="true" tabindex="-1"></a>cmap <span class="op">=</span> ListedColormap([<span class="st">&#39;red&#39;</span>, <span class="st">&#39;blue&#39;</span>])</span>
+<span id="cb14-16"><a href="#cb14-16" aria-hidden="true" tabindex="-1"></a>plt.imshow(matrix, cmap<span class="op">=</span>cmap, interpolation<span class="op">=</span><span class="st">&#39;nearest&#39;</span>, vmin<span class="op">=</span><span class="dv">0</span>, vmax<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb14-17"><a href="#cb14-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-18"><a href="#cb14-18" aria-hidden="true" tabindex="-1"></a>test_features <span class="op">=</span> format_and_get_feature(X_test)</span>
+<span id="cb14-19"><a href="#cb14-19" aria-hidden="true" tabindex="-1"></a>test_labels <span class="op">=</span> y_test</span>
+<span id="cb14-20"><a href="#cb14-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-21"><a href="#cb14-21" aria-hidden="true" tabindex="-1"></a>scatter <span class="op">=</span> plt.scatter([(i[<span class="dv">0</span>] <span class="op">/</span> <span class="dv">18</span> <span class="op">*</span> <span class="dv">200</span>) <span class="cf">for</span> i <span class="kw">in</span> test_features],</span>
+<span id="cb14-22"><a href="#cb14-22" aria-hidden="true" tabindex="-1"></a>                      [(i[<span class="dv">1</span>] <span class="op">/</span> <span class="dv">18</span> <span class="op">*</span> <span class="dv">200</span>) <span class="cf">for</span> i <span class="kw">in</span> test_features],</span>
+<span id="cb14-23"><a href="#cb14-23" aria-hidden="true" tabindex="-1"></a>                      c<span class="op">=</span>test_labels)</span>
+<span id="cb14-24"><a href="#cb14-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-25"><a href="#cb14-25" aria-hidden="true" tabindex="-1"></a>mean3_scatter <span class="op">=</span> plt.scatter(mean_3[<span class="dv">0</span>] <span class="op">/</span> <span class="dv">18</span> <span class="op">*</span> <span class="dv">200</span>, mean_3[<span class="dv">1</span>] <span class="op">/</span> <span class="dv">18</span> <span class="op">*</span> <span class="dv">200</span>, label<span class="op">=</span><span class="st">&#39;Mean 3&#39;</span>)</span>
+<span id="cb14-26"><a href="#cb14-26" aria-hidden="true" tabindex="-1"></a>mean9_scatter <span class="op">=</span> plt.scatter(mean_9[<span class="dv">0</span>] <span class="op">/</span> <span class="dv">18</span> <span class="op">*</span> <span class="dv">200</span>, mean_9[<span class="dv">1</span>] <span class="op">/</span> <span class="dv">18</span> <span class="op">*</span> <span class="dv">200</span>, label<span class="op">=</span><span class="st">&#39;Mean 9&#39;</span>)</span>
+<span id="cb14-27"><a href="#cb14-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-28"><a href="#cb14-28" aria-hidden="true" tabindex="-1"></a>plt.xticks(np.linspace(<span class="dv">0</span>, <span class="dv">200</span>, <span class="dv">9</span>), np.linspace(<span class="dv">0</span>, <span class="dv">18</span>, <span class="dv">9</span>))</span>
+<span id="cb14-29"><a href="#cb14-29" aria-hidden="true" tabindex="-1"></a>plt.yticks(np.linspace(<span class="dv">0</span>, <span class="dv">200</span>, <span class="dv">9</span>), np.linspace(<span class="dv">0</span>, <span class="dv">18</span>, <span class="dv">9</span>))</span>
+<span id="cb14-30"><a href="#cb14-30" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&#39;Visualisation of decision boundary&#39;</span>)</span>
+<span id="cb14-31"><a href="#cb14-31" aria-hidden="true" tabindex="-1"></a>plt.legend()</span>
+<span id="cb14-32"><a href="#cb14-32" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_8ea0fb87e6f84e7c9ff0dd554bfca62a/9e7f616fe1b29e09c944a2149d868a5eb910c9ba.png" /></p>
+</div>
+</div>
+<div class="cell markdown" id="qZ8RxtFz7-Np">
+<p>We have plotted the test data in the featuer space for class 3
+(black) and class 9 (white). However, the decision boundary is not steep
+enough. The blue color maps the features to class 9 and the red color to
+class 3. Thus, our function for the feature calculation might not be
+good enough. However, we have previously calcualted the test error which
+was quite low. Thus, we most likely did something wrong in the process
+of plotting.</p>
+</div>
+<section id="31" class="cell markdown" id="Ry0K4uZsbCBn">
+<h1>3.1</h1>
+</section>
+<div class="cell code" id="LWAsLTWsbIa3">
+<div class="sourceCode" id="cb15"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> fit_lds(training_features, training_labels):</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>  <span class="cf">assert</span> training_labels.shape[<span class="dv">0</span>] <span class="op">==</span> training_features.shape[<span class="dv">0</span>]</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>  features_3 <span class="op">=</span>  []</span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>  features_9 <span class="op">=</span> []</span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> feature_row <span class="kw">in</span> <span class="bu">range</span>(training_features.shape[<span class="dv">0</span>]):</span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> training_labels[feature_row] <span class="op">==</span> <span class="dv">3</span>:</span>
+<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a>      features_3.append(training_features[feature_row, :])</span>
+<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
+<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a>      features_9.append(training_features[feature_row, :])</span>
+<span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-13"><a href="#cb15-13" aria-hidden="true" tabindex="-1"></a>  mu_3 <span class="op">=</span> np.mean(np.array(features_3), axis<span class="op">=</span><span class="dv">0</span>)</span>
+<span id="cb15-14"><a href="#cb15-14" aria-hidden="true" tabindex="-1"></a>  mu_9 <span class="op">=</span> np.mean(np.array(features_9), axis<span class="op">=</span><span class="dv">0</span>)</span>
+<span id="cb15-15"><a href="#cb15-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-16"><a href="#cb15-16" aria-hidden="true" tabindex="-1"></a>  covmat <span class="op">=</span> np.zeros((training_features.shape[<span class="dv">1</span>], training_features.shape[<span class="dv">1</span>]))</span>
+<span id="cb15-17"><a href="#cb15-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-18"><a href="#cb15-18" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> i <span class="kw">in</span> features_3:</span>
+<span id="cb15-19"><a href="#cb15-19" aria-hidden="true" tabindex="-1"></a>    covmat <span class="op">+=</span> np.outer((i <span class="op">-</span> mu_3).T, (i <span class="op">-</span> mu_3))</span>
+<span id="cb15-20"><a href="#cb15-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-21"><a href="#cb15-21" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> i <span class="kw">in</span> features_9:</span>
+<span id="cb15-22"><a href="#cb15-22" aria-hidden="true" tabindex="-1"></a>    covmat <span class="op">+=</span> np.outer((i <span class="op">-</span> mu_9).T, (i <span class="op">-</span> mu_9))</span>
+<span id="cb15-23"><a href="#cb15-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-24"><a href="#cb15-24" aria-hidden="true" tabindex="-1"></a>  covmat <span class="op">/=</span> <span class="bu">len</span>(training_labels)</span>
+<span id="cb15-25"><a href="#cb15-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-26"><a href="#cb15-26" aria-hidden="true" tabindex="-1"></a>  N <span class="op">=</span> <span class="bu">len</span>(features_3)</span>
+<span id="cb15-27"><a href="#cb15-27" aria-hidden="true" tabindex="-1"></a>  p3 <span class="op">=</span> np.<span class="bu">sum</span>(training_labels <span class="op">==</span> <span class="dv">3</span>) <span class="op">/</span> N</span>
+<span id="cb15-28"><a href="#cb15-28" aria-hidden="true" tabindex="-1"></a>  p9 <span class="op">=</span> np.<span class="bu">sum</span>(training_labels <span class="op">==</span> <span class="dv">9</span>) <span class="op">/</span> N</span>
+<span id="cb15-29"><a href="#cb15-29" aria-hidden="true" tabindex="-1"></a>  p <span class="op">=</span> np.array([p3, p9])</span>
+<span id="cb15-30"><a href="#cb15-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-31"><a href="#cb15-31" aria-hidden="true" tabindex="-1"></a>  mu <span class="op">=</span> np.vstack((mu_3, mu_9))</span>
+<span id="cb15-32"><a href="#cb15-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-33"><a href="#cb15-33" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> mu, covmat, p</span></code></pre></div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="We2wgej5_R52" data-outputId="bc1e2e7f-c490-4f56-9ec5-89cdeaa513e7">
+<div class="sourceCode" id="cb16"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>params <span class="op">=</span> fit_lds(X_train, y_train)</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&#39;mu </span><span class="sc">{</span>params[<span class="dv">0</span>]<span class="sc">}</span><span class="ss">, </span><span class="ch">\n</span><span class="ss">covmat </span><span class="sc">{</span>params[<span class="dv">1</span>]<span class="sc">}</span><span class="ss">, </span><span class="ch">\n</span><span class="ss">p </span><span class="sc">{</span>params[<span class="dv">2</span>]<span class="sc">}</span><span class="ss">&#39;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>mu [[0.00000000e+00 6.66666667e-01 8.39639640e+00 1.41531532e+01
+  1.39009009e+01 7.10810811e+00 8.10810811e-01 9.00900901e-03
+  0.00000000e+00 3.76576577e+00 1.22162162e+01 9.07207207e+00
+  1.14504505e+01 1.15675676e+01 2.10810811e+00 9.00900901e-03
+  0.00000000e+00 1.60360360e+00 3.50450450e+00 3.45045045e+00
+  1.17027027e+01 9.00000000e+00 9.00900901e-01 0.00000000e+00
+  0.00000000e+00 1.44144144e-01 1.45045045e+00 8.70270270e+00
+  1.39009009e+01 5.58558559e+00 6.30630631e-02 0.00000000e+00
+  0.00000000e+00 5.40540541e-02 1.36036036e+00 5.95495495e+00
+  1.20450450e+01 1.10630631e+01 1.98198198e+00 0.00000000e+00
+  0.00000000e+00 5.67567568e-01 1.59459459e+00 1.20720721e+00
+  4.77477477e+00 1.20810811e+01 5.99099099e+00 0.00000000e+00
+  0.00000000e+00 9.18918919e-01 7.27927928e+00 6.22522523e+00
+  8.49549550e+00 1.32162162e+01 5.52252252e+00 9.00900901e-03
+  0.00000000e+00 5.13513514e-01 9.21621622e+00 1.46936937e+01
+  1.36846847e+01 8.30630631e+00 1.00900901e+00 9.00900901e-03]
+ [0.00000000e+00 1.22641509e-01 5.86792453e+00 1.21886792e+01
+  1.16037736e+01 5.70754717e+00 1.38679245e+00 2.83018868e-02
+  0.00000000e+00 2.59433962e+00 1.29528302e+01 9.50000000e+00
+  1.00943396e+01 1.15943396e+01 2.31132075e+00 7.54716981e-02
+  0.00000000e+00 3.60377358e+00 1.23867925e+01 5.91509434e+00
+  8.48113208e+00 1.43962264e+01 3.06603774e+00 5.66037736e-02
+  0.00000000e+00 1.87735849e+00 9.99056604e+00 1.19150943e+01
+  1.31037736e+01 1.39528302e+01 4.02830189e+00 0.00000000e+00
+  0.00000000e+00 1.41509434e-01 2.73584906e+00 5.29245283e+00
+  5.24528302e+00 1.17641509e+01 5.01886792e+00 0.00000000e+00
+  0.00000000e+00 1.69811321e-01 5.00000000e-01 5.37735849e-01
+  2.09433962e+00 1.03113208e+01 5.98113208e+00 0.00000000e+00
+  0.00000000e+00 5.37735849e-01 5.85849057e+00 4.66981132e+00
+  5.61320755e+00 1.08018868e+01 5.50000000e+00 8.49056604e-02
+  0.00000000e+00 6.60377358e-02 6.03773585e+00 1.22169811e+01
+  1.33773585e+01 9.26415094e+00 2.29245283e+00 6.60377358e-02]], 
+covmat [[ 0.00000000e+00  0.00000000e+00  0.00000000e+00 ...  0.00000000e+00
+   0.00000000e+00  0.00000000e+00]
+ [ 0.00000000e+00  6.63927774e-01  1.44416428e+00 ... -4.75118106e-01
+  -1.86491030e-01 -7.02837434e-03]
+ [ 0.00000000e+00  1.44416428e+00  1.33581083e+01 ... -1.58884500e+00
+  -1.04747492e+00 -6.20823414e-02]
+ ...
+ [ 0.00000000e+00 -4.75118106e-01 -1.58884500e+00 ...  2.48211491e+01
+   8.32490790e+00  1.74399249e-01]
+ [ 0.00000000e+00 -1.86491030e-01 -1.04747492e+00 ...  8.32490790e+00
+   8.97200439e+00  4.19095950e-01]
+ [ 0.00000000e+00 -7.02837434e-03 -6.20823414e-02 ...  1.74399249e-01
+   4.19095950e-01  6.23443633e-02]], 
+p [1.         0.95495495]
+</code></pre>
+</div>
+</div>
+<section id="32" class="cell markdown" id="LeX5HBBk_rlE">
+<h1>3.2</h1>
+</section>
+<div class="cell code" id="-mO062iL_swQ">
+<div class="sourceCode" id="cb18"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> predict_lda(mu, covmat, p, test_features):</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>  N <span class="op">=</span> mu.shape[<span class="dv">1</span>]</span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>  covmat_inverse <span class="op">=</span> np.linalg.inv(covmat)</span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>  mu_diff <span class="op">=</span> mu[<span class="dv">1</span>] <span class="op">-</span> mu[<span class="dv">0</span>]</span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>  beta <span class="op">=</span> np.dot(covmat_inverse, mu_diff.T)</span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a>  b <span class="op">=</span> <span class="op">-</span><span class="fl">0.5</span> <span class="op">*</span> (mu[<span class="dv">1</span>] <span class="op">-</span> mu[<span class="dv">0</span>]) <span class="op">*</span> beta <span class="op">+</span> np.log(N[<span class="dv">1</span>] <span class="op">/</span> N[<span class="dv">0</span>])</span>
+<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a>  test_labels <span class="op">=</span> []</span>
+<span id="cb18-9"><a href="#cb18-9" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(test_features.shape[<span class="dv">0</span>])):</span>
+<span id="cb18-10"><a href="#cb18-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> i <span class="op">*</span> beta <span class="op">+</span> b <span class="op">&gt;</span> <span class="dv">0</span>:</span>
+<span id="cb18-11"><a href="#cb18-11" aria-hidden="true" tabindex="-1"></a>      test_labels.append(<span class="dv">3</span>) <span class="co"># check if the classes are right</span></span>
+<span id="cb18-12"><a href="#cb18-12" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
+<span id="cb18-13"><a href="#cb18-13" aria-hidden="true" tabindex="-1"></a>      test_labels.append(<span class="dv">9</span>)</span></code></pre></div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:367}"
+id="orwBaE9rB8hy" data-outputId="f8fe7613-c369-465d-ea67-c9b4c73f7aa5">
+<div class="sourceCode" id="cb19"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Training data</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>predict_lda(<span class="op">*</span>params, test_features<span class="op">=</span>y_train)</span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Test data</span></span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>predict_lda(<span class="op">*</span>params, test_features<span class="op">=</span>y_test)</span></code></pre></div>
+<div class="output error" data-ename="LinAlgError"
+data-evalue="Singular matrix">
+<pre><code>---------------------------------------------------------------------------
+LinAlgError                               Traceback (most recent call last)
+&lt;ipython-input-66-c213a3d78fa9&gt; in &lt;cell line: 2&gt;()
+      1 # Training data
+----&gt; 2 predict_lda(*params, test_features=y_train)
+      3 
+      4 # Test data
+      5 predict_lda(*params, test_features=y_test)
+
+&lt;ipython-input-65-e298701dba1e&gt; in predict_lda(mu, covmat, p, test_features)
+      1 def predict_lda(mu, covmat, p, test_features):
+      2   N = mu.shape[1]
+----&gt; 3   covmat_inverse = np.linalg.inv(covmat)
+      4   mu_diff = mu[1] - mu[0]
+      5   beta = np.dot(covmat_inverse, mu_diff.T)
+
+/usr/local/lib/python3.10/dist-packages/numpy/linalg/linalg.py in inv(a)
+    559     signature = &#39;D-&gt;D&#39; if isComplexType(t) else &#39;d-&gt;d&#39;
+    560     extobj = get_linalg_error_extobj(_raise_linalgerror_singular)
+--&gt; 561     ainv = _umath_linalg.inv(a, signature=signature, extobj=extobj)
+    562     return wrap(ainv.astype(result_t, copy=False))
+    563 
+
+/usr/local/lib/python3.10/dist-packages/numpy/linalg/linalg.py in _raise_linalgerror_singular(err, flag)
+    110 
+    111 def _raise_linalgerror_singular(err, flag):
+--&gt; 112     raise LinAlgError(&quot;Singular matrix&quot;)
+    113 
+    114 def _raise_linalgerror_nonposdef(err, flag):
+
+LinAlgError: Singular matrix
+</code></pre>
+</div>
+</div>
+<section id="33" class="cell markdown" id="PuqHmyPHB-W1">
+<h1>3.3</h1>
+</section>
+<section id="4" class="cell markdown" id="CZSPb22OyRis">
+<h1>4</h1>
+</section>
+<div class="cell code" id="GukL7PRnCAML">
+<div class="sourceCode" id="cb21"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> partial_derivative_loss_beta(beta, b, X, y, lamda):</span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>    N <span class="op">=</span> <span class="bu">len</span>(y)</span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>    partial_sum <span class="op">=</span> np.zeros_like(beta)</span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(N):</span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> y[i] <span class="op">*</span> (np.dot(X[i], beta) <span class="op">+</span> b) <span class="op">&lt;</span> <span class="dv">1</span>:</span>
+<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a>            partial_sum <span class="op">+=</span> <span class="op">-</span>y[i] <span class="op">*</span> X[i]</span>
+<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> beta <span class="op">+</span> (lamda <span class="op">/</span> N) <span class="op">*</span> partial_sum</span>
+<span id="cb21-8"><a href="#cb21-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-9"><a href="#cb21-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-10"><a href="#cb21-10" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> partial_derivative_loss_b(beta, b, X, y, lamda):</span>
+<span id="cb21-11"><a href="#cb21-11" aria-hidden="true" tabindex="-1"></a>    N <span class="op">=</span> <span class="bu">len</span>(y)</span>
+<span id="cb21-12"><a href="#cb21-12" aria-hidden="true" tabindex="-1"></a>    partial_sum <span class="op">=</span> np.zeros_like(beta)</span>
+<span id="cb21-13"><a href="#cb21-13" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(N):</span>
+<span id="cb21-14"><a href="#cb21-14" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> y[i] <span class="op">*</span> (np.dot(X[i], beta) <span class="op">+</span> b) <span class="op">&lt;</span> <span class="dv">1</span>:</span>
+<span id="cb21-15"><a href="#cb21-15" aria-hidden="true" tabindex="-1"></a>            partial_sum <span class="op">+=</span> <span class="op">-</span>y[i]</span>
+<span id="cb21-16"><a href="#cb21-16" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> (lamda <span class="op">/</span> N) <span class="op">*</span> partial_sum</span>
+<span id="cb21-17"><a href="#cb21-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-18"><a href="#cb21-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-19"><a href="#cb21-19" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> loss_function(beta, b, X, y, lambda_):</span>
+<span id="cb21-20"><a href="#cb21-20" aria-hidden="true" tabindex="-1"></a>    N <span class="op">=</span> <span class="bu">len</span>(y)</span>
+<span id="cb21-21"><a href="#cb21-21" aria-hidden="true" tabindex="-1"></a>    beta <span class="op">=</span> beta.reshape(<span class="op">-</span><span class="dv">1</span>, <span class="dv">1</span>)</span>
+<span id="cb21-22"><a href="#cb21-22" aria-hidden="true" tabindex="-1"></a>    hinge_loss <span class="op">=</span> np.maximum(<span class="dv">0</span>, <span class="dv">1</span> <span class="op">-</span> y <span class="op">*</span> (X.dot(beta) <span class="op">+</span> b))</span>
+<span id="cb21-23"><a href="#cb21-23" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="fl">0.5</span> <span class="op">*</span> np.dot(beta, beta) <span class="op">+</span> lambda_ <span class="op">/</span> N <span class="op">*</span> np.<span class="bu">sum</span>(hinge_loss)</span>
+<span id="cb21-24"><a href="#cb21-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-25"><a href="#cb21-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-26"><a href="#cb21-26" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> plot_loss(loss_list):</span>
+<span id="cb21-27"><a href="#cb21-27" aria-hidden="true" tabindex="-1"></a>  plt.plot(np.linspace(<span class="dv">0</span>, <span class="bu">len</span>(loss_list)), loss_list)</span>
+<span id="cb21-28"><a href="#cb21-28" aria-hidden="true" tabindex="-1"></a>  plt.xlabel(<span class="st">&#39;Iterations&#39;</span>)</span>
+<span id="cb21-29"><a href="#cb21-29" aria-hidden="true" tabindex="-1"></a>  plt.ylabel(<span class="st">&#39;loss&#39;</span>)</span>
+<span id="cb21-30"><a href="#cb21-30" aria-hidden="true" tabindex="-1"></a>  plt.show()</span></code></pre></div>
+</div>
+<div class="cell code" id="A7dZ9XfYyTC8">
+<div class="sourceCode" id="cb22"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> fit_svm(training_features, training_labels, lambda_, learning_rate, max_steps, tolerance):</span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Initialize parameters</span></span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>    beta <span class="op">=</span> np.random.normal(size<span class="op">=</span>training_features.shape[<span class="dv">1</span>])</span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>    b <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a>    N <span class="op">=</span> training_features.shape[<span class="dv">0</span>]</span>
+<span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a>    loss <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb22-8"><a href="#cb22-8" aria-hidden="true" tabindex="-1"></a>    loss_list <span class="op">=</span> []</span>
+<span id="cb22-9"><a href="#cb22-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-10"><a href="#cb22-10" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Gradient descent optimization</span></span>
+<span id="cb22-11"><a href="#cb22-11" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> step <span class="kw">in</span> <span class="bu">range</span>(max_steps):</span>
+<span id="cb22-12"><a href="#cb22-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-13"><a href="#cb22-13" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Compute gradients</span></span>
+<span id="cb22-14"><a href="#cb22-14" aria-hidden="true" tabindex="-1"></a>        d_beta <span class="op">=</span> partial_derivative_loss_beta(beta, b, training_features, training_labels, lambda_)</span>
+<span id="cb22-15"><a href="#cb22-15" aria-hidden="true" tabindex="-1"></a>        d_b <span class="op">=</span> partial_derivative_loss_b(beta, b, training_features, training_labels, lambda_)</span>
+<span id="cb22-16"><a href="#cb22-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-17"><a href="#cb22-17" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Update parameters</span></span>
+<span id="cb22-18"><a href="#cb22-18" aria-hidden="true" tabindex="-1"></a>        beta <span class="op">-=</span> learning_rate <span class="op">*</span> d_beta</span>
+<span id="cb22-19"><a href="#cb22-19" aria-hidden="true" tabindex="-1"></a>        b <span class="op">-=</span> learning_rate <span class="op">*</span> d_b</span>
+<span id="cb22-20"><a href="#cb22-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-21"><a href="#cb22-21" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Calculate loss</span></span>
+<span id="cb22-22"><a href="#cb22-22" aria-hidden="true" tabindex="-1"></a>        loss <span class="op">+=</span> loss_function(beta, b, training_features, training_labels, lambda_)</span>
+<span id="cb22-23"><a href="#cb22-23" aria-hidden="true" tabindex="-1"></a>        loss_list.append(loss)</span>
+<span id="cb22-24"><a href="#cb22-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-25"><a href="#cb22-25" aria-hidden="true" tabindex="-1"></a>        <span class="co"># training rate scheduler</span></span>
+<span id="cb22-26"><a href="#cb22-26" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="bu">len</span>(loss_list) <span class="op">&gt;</span> <span class="dv">10</span> <span class="kw">and</span> <span class="bu">abs</span>(loss_list[<span class="op">-</span><span class="dv">1</span>] <span class="op">-</span> loss_list[<span class="op">-</span><span class="dv">2</span>]) <span class="op">&gt;</span> tolerance:</span>
+<span id="cb22-27"><a href="#cb22-27" aria-hidden="true" tabindex="-1"></a>          learning_rate <span class="op">/=</span> <span class="dv">10</span></span>
+<span id="cb22-28"><a href="#cb22-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-29"><a href="#cb22-29" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> beta, b, loss_list</span></code></pre></div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:349}"
+id="b08W5V7r-SmC" data-outputId="8b0ac8be-9ebe-4e0e-e1f4-30bc46002f5c">
+<div class="sourceCode" id="cb23"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>tolerance <span class="op">=</span> <span class="fl">0.05</span></span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>max_steps <span class="op">=</span> <span class="dv">100</span></span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>learning_rate <span class="op">=</span> <span class="fl">0.1</span></span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a>lambda_ <span class="op">=</span> <span class="fl">0.3</span></span>
+<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a>training_features <span class="op">=</span> format_and_get_feature(X_train)</span>
+<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-7"><a href="#cb23-7" aria-hidden="true" tabindex="-1"></a>beta, b, loss_list <span class="op">=</span> fit_svm(training_features, training_labels, lambda_, learning_rate, max_steps, tolerance)</span>
+<span id="cb23-8"><a href="#cb23-8" aria-hidden="true" tabindex="-1"></a>plot_loss(loss_list)</span></code></pre></div>
+<div class="output error" data-ename="ValueError"
+data-evalue="operands could not be broadcast together with shapes (217,) (217,2) ">
+<pre><code>---------------------------------------------------------------------------
+ValueError                                Traceback (most recent call last)
+&lt;ipython-input-67-72a34d17ee48&gt; in &lt;cell line: 7&gt;()
+      5 training_features = format_and_get_feature(X_train)
+      6 
+----&gt; 7 beta, b, loss_list = fit_svm(training_features, training_labels, lambda_, learning_rate, max_steps, tolerance)
+      8 plot_loss(loss_list)
+
+&lt;ipython-input-51-3c7d6dcaf52a&gt; in fit_svm(training_features, training_labels, lambda_, learning_rate, max_steps, tolerance)
+     20 
+     21         # Calculate loss
+---&gt; 22         loss += loss_function(beta, b, training_features, training_labels, lambda_)
+     23         loss_list.append(loss)
+     24 
+
+&lt;ipython-input-61-20d58c9b0f6e&gt; in loss_function(beta, b, X, y, lambda_)
+     20     N = len(y)
+     21     beta = beta.reshape(-1, 1)
+---&gt; 22     hinge_loss = np.maximum(0, 1 - y * (X.dot(beta) + b))
+     23     return 0.5 * np.dot(beta, beta) + lambda_ / N * np.sum(hinge_loss)
+     24 
+
+ValueError: operands could not be broadcast together with shapes (217,) (217,2) 
+</code></pre>
+</div>
+</div>
+<div class="cell code" id="6IJAxPJB0L_Q">
+<div class="sourceCode" id="cb25"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> predict_svm(X, beta, b):</span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>    predictions <span class="op">=</span> np.sign(np.dot(X, beta) <span class="op">+</span> b)</span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> predictions</span></code></pre></div>
+</div>
+<div class="cell code" id="7t71oG14Fxtw">
+<div class="sourceCode" id="cb26"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="co"># plot loss</span></span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>plot_loss(loss_list)</span></code></pre></div>
+</div>
+<div class="cell code" id="g9m8pOoyFe4q">
+<div class="sourceCode" id="cb27"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Visualize decision boundary</span></span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> boundary(x, beta, b):</span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> x<span class="op">*</span>beta <span class="op">+</span> b</span>
+<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a>test_features <span class="op">=</span> format_and_get_feature(X_test)</span>
+<span id="cb27-7"><a href="#cb27-7" aria-hidden="true" tabindex="-1"></a>test_labels <span class="op">=</span> y_test</span>
+<span id="cb27-8"><a href="#cb27-8" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> np.linspace(<span class="dv">0</span>,<span class="dv">18</span>)</span>
+<span id="cb27-9"><a href="#cb27-9" aria-hidden="true" tabindex="-1"></a>plt.plot(x, boundary(x, beta, b))</span>
+<span id="cb27-10"><a href="#cb27-10" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&#39;SVM decision boundary in feature space&#39;</span>)</span>
+<span id="cb27-11"><a href="#cb27-11" aria-hidden="true" tabindex="-1"></a>plt.scatter([i[<span class="dv">0</span>] <span class="cf">for</span> i <span class="kw">in</span> test_features],</span>
+<span id="cb27-12"><a href="#cb27-12" aria-hidden="true" tabindex="-1"></a>                      [i[<span class="dv">1</span>] <span class="cf">for</span> i <span class="kw">in</span> test_features],</span>
+<span id="cb27-13"><a href="#cb27-13" aria-hidden="true" tabindex="-1"></a>                      c<span class="op">=</span>test_labels)</span></code></pre></div>
+</div>
+<div class="cell code" id="5AGBmlmV6ZW2">
+<div class="sourceCode" id="cb28"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Cross validation</span></span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a>lambda_guesses <span class="op">=</span> [<span class="dv">0</span>, <span class="fl">0.1</span>, <span class="fl">0.5</span>, <span class="fl">0.8</span>, <span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>]</span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a>results <span class="op">=</span> []</span>
+<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> lambda_ <span class="kw">in</span> lambda_guesses:</span>
+<span id="cb28-6"><a href="#cb28-6" aria-hidden="true" tabindex="-1"></a>  params <span class="op">=</span> fit_svm(training_features, training_features, lambda_, learning_rate, max_steps, tolerance)</span>
+<span id="cb28-7"><a href="#cb28-7" aria-hidden="true" tabindex="-1"></a>  results.append(params)</span>
+<span id="cb28-8"><a href="#cb28-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-9"><a href="#cb28-9" aria-hidden="true" tabindex="-1"></a>last_losses <span class="op">=</span> [i[<span class="dv">2</span>][<span class="op">-</span><span class="dv">1</span>] <span class="cf">for</span> i <span class="kw">in</span> results]</span>
+<span id="cb28-10"><a href="#cb28-10" aria-hidden="true" tabindex="-1"></a>lowest_loss <span class="op">=</span> <span class="bu">min</span>(last_losses)</span>
+<span id="cb28-11"><a href="#cb28-11" aria-hidden="true" tabindex="-1"></a>index <span class="op">=</span> last_losses.index(lowest_loss)</span>
+<span id="cb28-12"><a href="#cb28-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-13"><a href="#cb28-13" aria-hidden="true" tabindex="-1"></a>best_lambda <span class="op">=</span> lambda_guesses[index]</span>
+<span id="cb28-14"><a href="#cb28-14" aria-hidden="true" tabindex="-1"></a>best_beta <span class="op">=</span> results[index][<span class="dv">0</span>]</span>
+<span id="cb28-15"><a href="#cb28-15" aria-hidden="true" tabindex="-1"></a>best_b <span class="op">=</span> results[index][<span class="dv">1</span>]</span>
+<span id="cb28-16"><a href="#cb28-16" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&#39;lambda </span><span class="sc">{</span>best_lambda<span class="sc">}</span><span class="ss">, beta </span><span class="sc">{</span>best_beta<span class="sc">}</span><span class="ss">, b</span><span class="sc">{</span>best_b<span class="sc">}</span><span class="ss">&#39;</span>)</span></code></pre></div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="p8rXCynZCTUu" data-outputId="95d3dd9f-275d-4688-b10e-ab3ba3bda3ac">
+<div class="sourceCode" id="cb29"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="co"># sklearn</span></span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.svm <span class="im">import</span> SVC</span>
+<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> accuracy_score</span>
+<span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-6"><a href="#cb29-6" aria-hidden="true" tabindex="-1"></a>svm_model <span class="op">=</span> SVC(kernel<span class="op">=</span><span class="st">&#39;linear&#39;</span>, C<span class="op">=</span><span class="fl">1.0</span>, random_state<span class="op">=</span><span class="dv">42</span>)</span>
+<span id="cb29-7"><a href="#cb29-7" aria-hidden="true" tabindex="-1"></a>svm_model.fit(training_features, training_labels)</span>
+<span id="cb29-8"><a href="#cb29-8" aria-hidden="true" tabindex="-1"></a>y_pred <span class="op">=</span> svm_model.predict(test_features)</span>
+<span id="cb29-9"><a href="#cb29-9" aria-hidden="true" tabindex="-1"></a>accuracy <span class="op">=</span> accuracy_score(test_labels, y_pred)</span>
+<span id="cb29-10"><a href="#cb29-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Accuracy:&quot;</span>, accuracy)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Accuracy: 0.9657534246575342
+</code></pre>
+</div>
+</div>
+<div class="cell markdown" id="9sZRsEsFC8Ht">
+<p>We got a pretty high accuracy. This algorithm performed better than
+ours did.</p>
+</div>
+</body>
+</html>
