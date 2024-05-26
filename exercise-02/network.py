@@ -180,7 +180,7 @@ if __name__=="__main__":
                                  [5, 5, n_classes],
                                  [30, 30, n_classes]]
     
-    n_epochs = 10
+    n_epochs = 5
     batch_size = 200
     learning_rate = 0.05
     # create networks
