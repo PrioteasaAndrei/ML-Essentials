@@ -10,10 +10,8 @@ class ReLULayer(object):
     def forward(self, input):
         # remember the input for later backpropagation
         self.input = input
-        # print("Input is of shape:",input.shape)
         # return the ReLU of the input
-        relu = np.maximum(0,input)
-    
+        relu = np.maximum(0, input)
         return relu
 
     def backward(self, upstream_gradient):
@@ -33,31 +31,19 @@ class OutputLayer(object):
     def forward(self, input):
         # remember the input for later backpropagation
         self.input = input
-        # print("Input is of shape:",input.shape)
-
         # return the softmax of the input
         softmax = np.exp(input) / np.sum(np.exp(input), axis=1, keepdims=True)
         return softmax
 
-    '''
-    B x Class
-    true_labes: B, is a list
-    '''
     def backward(self, predicted_posteriors, true_labels):
         # return the loss derivative with respect to the stored inputs
         # (use cross-entropy loss and the chain rule for softmax,
         #  as derived in the lecture)
-
         def get_one_hot(targets, nb_classes):
             res = np.eye(nb_classes)[np.array(targets).reshape(-1)]
             return res.reshape(list(targets.shape)+[nb_classes])
         
-
-        # print("Predicted posterior:",predicted_posteriors)
-        # print("True labels:",true_labels)
-
         one_hot_labels = get_one_hot(true_labels, self.n_classes)
-
         downstream_gradient = predicted_posteriors - one_hot_labels
         return downstream_gradient
 
@@ -78,18 +64,16 @@ class LinearLayer(object):
     def forward(self, input):
         # remember the input for later backpropagation
         self.input = input
-        # print("Input is of shape:",input.shape)
-
         # compute the scalar product of input and weights
         # (these are the preactivations for the subsequent non-linear layer)
-        preactivations = self.input @ self.B + self.b
+        preactivations = self.input @ self.B + self.b # your code here
         return preactivations
 
     def backward(self, upstream_gradient):
         # compute the derivative of the weights from
         # upstream_gradient and the stored input
         self.grad_b = np.sum(upstream_gradient, axis=0) / upstream_gradient.shape[0] # your code here
-        self.grad_B = np.sum([np.outer(self.input[i], upstream_gradient[i]) for i in range(upstream_gradient.shape[0])], axis=0) / upstream_gradient.shape[0] # your code here
+        self.grad_B = self.input.T @ upstream_gradient # your code here
         # compute the downstream gradient to be passed to the preceding layer
         downstream_gradient = upstream_gradient @ self.B.T # your code here
         return downstream_gradient
@@ -142,17 +126,13 @@ class MLP(object):
     def backward(self, predicted_posteriors, true_classes):
         # perform backpropagation w.r.t. the prediction for the latest mini-batch X
         upstream_gradient = self.layers[-1].backward(predicted_posteriors, true_classes)
-        # print("Output loss is:",loss)
         for layer in reversed(self.layers[:-1]):
             upstream_gradient = layer.backward(upstream_gradient)
 
 
     def update(self, X, Y, learning_rate):
         posteriors = self.forward(X)
-        print("Posteriors:",posteriors)
         predicted_classes = np.argmax(posteriors, axis=1)
-        print("Predicted classes:",predicted_classes)
-        print("True classes:",Y)
         self.backward(posteriors, Y)
         for layer in self.layers:
             layer.update(learning_rate)
@@ -177,28 +157,7 @@ class MLP(object):
 
 ##################################
 
-
-def test_linear():
-    l = LinearLayer(2,3)
-    print(l.B)
-    print(l.b)
-    print(l.forward(np.array([[1,2]])))
-    print(l.backward(np.array([[1,2,3]])))
-    print(l.update(0.1))
-    print(l.B)
-    print(l.b)
-
-def test_output():
-    o = OutputLayer(3)
-    print(o.forward(np.array([[1,2,3]])))
-    print(o.backward(np.array([[1,2,3],[2,3,4]]), np.array([2,5])))
-    ## do another bakcward pass with more labels
-    print(o.update(0.1))
-
 if __name__=="__main__":
-
-    # test_linear()
-    # test_output()
 
     # set training/test set size
     N = 2000
@@ -216,22 +175,27 @@ if __name__=="__main__":
     X_test  = ((X_test  - offset) / scaling - 0.5) * 2.0
 
     # set hyperparameters (play with these!)
-    layer_sizes = [5, 5, n_classes]
-    n_epochs = 5
+    layer_sizes_multiple_mlps = [[2, 2, n_classes],
+                                 [3, 3, n_classes],
+                                 [5, 5, n_classes],
+                                 [30, 30, n_classes]]
+    
+    n_epochs = 10
     batch_size = 200
     learning_rate = 0.05
+    # create networks
+    for layer_sizes in layer_sizes_multiple_mlps:
+        print("MLP with layer_sizes:", layer_sizes)
+        network = MLP(n_features, layer_sizes)
 
-    # create network
-    network = MLP(n_features, layer_sizes)
+        # train
+        network.train(X_train, Y_train, n_epochs, batch_size, learning_rate)
 
-    # train
-    network.train(X_train, Y_train, n_epochs, batch_size, learning_rate)
-
-    # test
-    predicted_posteriors = network.forward(X_test)
-    # determine class predictions from posteriors by winner-takes-all rule
-    predicted_classes = np.argmax(predicted_posteriors, axis=1) # your code here
-    # compute and output the error rate of predicted_classes
-    error_rate = np.sum(predicted_classes != Y_test) / len(Y_test) # your code here
-    print("error rate:", error_rate)
+        # test
+        predicted_posteriors = network.forward(X_test)
+        # determine class predictions from posteriors by winner-takes-all rule
+        predicted_classes = np.argmax(predicted_posteriors, axis=1) # your code here
+        # compute and output the error rate of predicted_classes
+        error_rate = np.sum(predicted_classes != Y_test) / len(Y_test) # your code here
+        print("error rate:", error_rate)
 
