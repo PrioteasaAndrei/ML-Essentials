@@ -88,6 +88,7 @@ class LinearLayer(object):
     def backward(self, upstream_gradient):
         # compute the derivative of the weights from
         # upstream_gradient and the stored input
+        # why sum?
         self.grad_b = np.sum(upstream_gradient, axis=0) # your code here
         self.grad_B = self.input.T @ upstream_gradient # your code here
         # compute the downstream gradient to be passed to the preceding layer
@@ -141,18 +142,17 @@ class MLP(object):
 
     def backward(self, predicted_posteriors, true_classes):
         # perform backpropagation w.r.t. the prediction for the latest mini-batch X
-        loss = self.layers[-1].backward(predicted_posteriors, true_classes)
+        upstream_gradient = self.layers[-1].backward(predicted_posteriors, true_classes)
         # print("Output loss is:",loss)
         for layer in reversed(self.layers[:-1]):
-            loss = layer.backward(loss)
+            upstream_gradient = layer.backward(upstream_gradient)
 
 
     def update(self, X, Y, learning_rate):
         posteriors = self.forward(X)
-        '''sss'''
         predicted_classes = np.argmax(posteriors, axis=1)
-        print("Predicted classes:",predicted_classes)
-        print("True classes:",Y)
+        # print("Predicted classes:",predicted_classes)
+        # print("True classes:",Y)
         self.backward(posteriors, Y)
         for layer in self.layers:
             layer.update(learning_rate)
@@ -209,8 +209,6 @@ if __name__=="__main__":
     n_features = 2 ## TODO try 4 networks here
     n_classes  = 2
 
-    print(Y_train)
-
     # standardize features to be in [-1, 1]
     offset  = X_train.min(axis=0)
     scaling = X_train.max(axis=0) - offset
@@ -230,11 +228,10 @@ if __name__=="__main__":
     network.train(X_train, Y_train, n_epochs, batch_size, learning_rate)
 
     # test
-    # predicted_posteriors = network.forward(X_test)
-    # # determine class predictions from posteriors by winner-takes-all rule
-    # predicted_classes = ... # your code here
-    # # compute and output the error rate of predicted_classes
-    # error_rate = ... # your code here
-    # print("error rate:", error_rate)
-
+    predicted_posteriors = network.forward(X_test)
+    # determine class predictions from posteriors by winner-takes-all rule
+    predicted_classes = np.argmax(predicted_posteriors, axis=1) # your code here
+    # compute and output the error rate of predicted_classes
+    error_rate = np.sum(predicted_classes != Y_test) / len(Y_test) # your code here
+    print("error rate:", error_rate)
 
