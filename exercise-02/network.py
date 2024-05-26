@@ -88,9 +88,8 @@ class LinearLayer(object):
     def backward(self, upstream_gradient):
         # compute the derivative of the weights from
         # upstream_gradient and the stored input
-        # why sum?
-        self.grad_b = np.sum(upstream_gradient, axis=0) # your code here
-        self.grad_B = self.input.T @ upstream_gradient # your code here
+        self.grad_b = np.sum(upstream_gradient, axis=0) / upstream_gradient.shape[0] # your code here
+        self.grad_B = np.sum([np.outer(self.input[i], upstream_gradient[i]) for i in range(upstream_gradient.shape[0])], axis=0) / upstream_gradient.shape[0] # your code here
         # compute the downstream gradient to be passed to the preceding layer
         downstream_gradient = upstream_gradient @ self.B.T # your code here
         return downstream_gradient
@@ -150,9 +149,10 @@ class MLP(object):
 
     def update(self, X, Y, learning_rate):
         posteriors = self.forward(X)
+        print("Posteriors:",posteriors)
         predicted_classes = np.argmax(posteriors, axis=1)
-        # print("Predicted classes:",predicted_classes)
-        # print("True classes:",Y)
+        print("Predicted classes:",predicted_classes)
+        print("True classes:",Y)
         self.backward(posteriors, Y)
         for layer in self.layers:
             layer.update(learning_rate)
